@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="BTSViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="sdfa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLx-qx-SaE">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="XQe-lg-Pe5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNg-ku-BwB">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="Lhu-cb-xEc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Resend">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resend:" destination="2" eventType="touchUpInside" id="aNk-WX-UO5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="middleTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="274" translatesAutoresizingMaskIntoConstraints="NO" id="WOl-JV-Y6T">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="UJ7-Ya-ghy"/>
+                                    <constraint firstAttribute="height" constant="478" id="wua-6A-I74"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VB-Qx-Vyf">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="5By-cm-gfh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Quit">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="exitApp:" destination="2" eventType="touchUpInside" id="Qh6-Je-eaQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6VB-Qx-Vyf" firstAttribute="top" secondItem="3" secondAttribute="top" constant="80" id="1If-HS-Q8k"/>
+                            <constraint firstItem="hNg-ku-BwB" firstAttribute="bottom" secondItem="hLx-qx-SaE" secondAttribute="bottom" type="default" id="3b4-Nt-f1A"/>
+                            <constraint firstAttribute="trailing" secondItem="hNg-ku-BwB" secondAttribute="trailing" constant="77" id="72v-ku-oTz"/>
+                            <constraint firstItem="hLx-qx-SaE" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="93" id="9mX-jL-krK"/>
+                            <constraint firstItem="hNg-ku-BwB" firstAttribute="top" secondItem="3" secondAttribute="top" constant="23" id="CyP-VK-FET"/>
+                            <constraint firstItem="6VB-Qx-Vyf" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="31" id="LBx-ch-ExL"/>
+                            <constraint firstItem="6VB-Qx-Vyf" firstAttribute="leading" secondItem="WOl-JV-Y6T" secondAttribute="leading" type="default" id="rmo-or-QOC"/>
+                            <constraint firstItem="WOl-JV-Y6T" firstAttribute="top" secondItem="hLx-qx-SaE" secondAttribute="top" type="default" id="u3b-ZX-Vuh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataLabel" destination="WOl-JV-Y6T" id="cfc-fj-7BP"/>
+                        <outlet property="sessionCount" destination="hLx-qx-SaE" id="rXI-Sm-Asl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

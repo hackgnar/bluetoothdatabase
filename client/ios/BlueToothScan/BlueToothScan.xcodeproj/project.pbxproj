@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C90318911734B984008DE36C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94229081734B00F0099F9CC /* CoreBluetooth.framework */; };
+		C90318921734B98E008DE36C /* BluetoothManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9969F0D1734B6A600E87042 /* BluetoothManager.framework */; };
+		C90318941734C92D008DE36C /* BluetoothManager.h in Resources */ = {isa = PBXBuildFile; fileRef = C90318931734C92D008DE36C /* BluetoothManager.h */; };
+		C94228C81734AE410099F9CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94228C71734AE410099F9CC /* UIKit.framework */; };
+		C94228CA1734AE410099F9CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94228C91734AE410099F9CC /* Foundation.framework */; };
+		C94228CC1734AE410099F9CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94228CB1734AE410099F9CC /* CoreGraphics.framework */; };
+		C94228D21734AE410099F9CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C94228D01734AE410099F9CC /* InfoPlist.strings */; };
+		C94228D41734AE410099F9CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C94228D31734AE410099F9CC /* main.m */; };
+		C94228D81734AE410099F9CC /* BTSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C94228D71734AE410099F9CC /* BTSAppDelegate.m */; };
+		C94228DA1734AE410099F9CC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C94228D91734AE410099F9CC /* Default.png */; };
+		C94228DC1734AE410099F9CC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C94228DB1734AE410099F9CC /* Default@2x.png */; };
+		C94228DE1734AE410099F9CC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C94228DD1734AE410099F9CC /* Default-568h@2x.png */; };
+		C94228E11734AE410099F9CC /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C94228DF1734AE410099F9CC /* MainStoryboard_iPhone.storyboard */; };
+		C94228E41734AE410099F9CC /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C94228E21734AE410099F9CC /* MainStoryboard_iPad.storyboard */; };
+		C94228E71734AE420099F9CC /* BTSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C94228E61734AE420099F9CC /* BTSViewController.m */; };
+		C94228EF1734AE420099F9CC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94228EE1734AE420099F9CC /* SenTestingKit.framework */; };
+		C94228F01734AE420099F9CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94228C71734AE410099F9CC /* UIKit.framework */; };
+		C94228F11734AE420099F9CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94228C91734AE410099F9CC /* Foundation.framework */; };
+		C94228F91734AE420099F9CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C94228F71734AE420099F9CC /* InfoPlist.strings */; };
+		C94228FC1734AE420099F9CC /* BlueToothScanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C94228FB1734AE420099F9CC /* BlueToothScanTests.m */; };
+		C94229071734AF3A0099F9CC /* BTSscan.m in Sources */ = {isa = PBXBuildFile; fileRef = C94229061734AF390099F9CC /* BTSscan.m */; };
+		C96EDEC017359E2200426999 /* BluetoothDevice.h in Resources */ = {isa = PBXBuildFile; fileRef = C96EDEBF17359E2200426999 /* BluetoothDevice.h */; };
+		C9CB04D617375A06003B70E4 /* BTSCurrentLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB04D517375A06003B70E4 /* BTSCurrentLocation.m */; };
+		C9CB04D917375A1E003B70E4 /* BTSRestTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB04D817375A1E003B70E4 /* BTSRestTransport.m */; };
+		C9CB04DB17375A3C003B70E4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CB04DA17375A3C003B70E4 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C94228F21734AE420099F9CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C94228BC1734AE410099F9CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C94228C31734AE410099F9CC;
+			remoteInfo = BlueToothScan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C90318931734C92D008DE36C /* BluetoothManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BluetoothManager.h; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/PrivateFrameworks/BluetoothManager.framework/Headers/BluetoothManager.h; sourceTree = "<absolute>"; };
+		C94228C41734AE410099F9CC /* BlueToothScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueToothScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C94228C71734AE410099F9CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C94228C91734AE410099F9CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C94228CB1734AE410099F9CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C94228CF1734AE410099F9CC /* BlueToothScan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlueToothScan-Info.plist"; sourceTree = "<group>"; };
+		C94228D11734AE410099F9CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C94228D31734AE410099F9CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C94228D51734AE410099F9CC /* BlueToothScan-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlueToothScan-Prefix.pch"; sourceTree = "<group>"; };
+		C94228D61734AE410099F9CC /* BTSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTSAppDelegate.h; sourceTree = "<group>"; };
+		C94228D71734AE410099F9CC /* BTSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTSAppDelegate.m; sourceTree = "<group>"; };
+		C94228D91734AE410099F9CC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C94228DB1734AE410099F9CC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C94228DD1734AE410099F9CC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C94228E01734AE410099F9CC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		C94228E31734AE410099F9CC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		C94228E51734AE420099F9CC /* BTSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTSViewController.h; sourceTree = "<group>"; };
+		C94228E61734AE420099F9CC /* BTSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTSViewController.m; sourceTree = "<group>"; };
+		C94228ED1734AE420099F9CC /* BlueToothScanTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueToothScanTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C94228EE1734AE420099F9CC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C94228F61734AE420099F9CC /* BlueToothScanTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlueToothScanTests-Info.plist"; sourceTree = "<group>"; };
+		C94228F81734AE420099F9CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C94228FA1734AE420099F9CC /* BlueToothScanTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueToothScanTests.h; sourceTree = "<group>"; };
+		C94228FB1734AE420099F9CC /* BlueToothScanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueToothScanTests.m; sourceTree = "<group>"; };
+		C94229051734AF390099F9CC /* BTSscan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSscan.h; sourceTree = "<group>"; };
+		C94229061734AF390099F9CC /* BTSscan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSscan.m; sourceTree = "<group>"; };
+		C94229081734B00F0099F9CC /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		C96EDEBF17359E2200426999 /* BluetoothDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BluetoothDevice.h; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/PrivateFrameworks/BluetoothManager.framework/Headers/BluetoothDevice.h; sourceTree = "<absolute>"; };
+		C9969F0D1734B6A600E87042 /* BluetoothManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BluetoothManager.framework; path = System/Library/PrivateFrameworks/BluetoothManager.framework; sourceTree = SDKROOT; };
+		C9CB04D417375A06003B70E4 /* BTSCurrentLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSCurrentLocation.h; sourceTree = "<group>"; };
+		C9CB04D517375A06003B70E4 /* BTSCurrentLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSCurrentLocation.m; sourceTree = "<group>"; };
+		C9CB04D717375A1E003B70E4 /* BTSRestTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSRestTransport.h; sourceTree = "<group>"; };
+		C9CB04D817375A1E003B70E4 /* BTSRestTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSRestTransport.m; sourceTree = "<group>"; };
+		C9CB04DA17375A3C003B70E4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C94228C11734AE410099F9CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CB04DB17375A3C003B70E4 /* CoreLocation.framework in Frameworks */,
+				C90318921734B98E008DE36C /* BluetoothManager.framework in Frameworks */,
+				C90318911734B984008DE36C /* CoreBluetooth.framework in Frameworks */,
+				C94228C81734AE410099F9CC /* UIKit.framework in Frameworks */,
+				C94228CA1734AE410099F9CC /* Foundation.framework in Frameworks */,
+				C94228CC1734AE410099F9CC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C94228E91734AE420099F9CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94228EF1734AE420099F9CC /* SenTestingKit.framework in Frameworks */,
+				C94228F01734AE420099F9CC /* UIKit.framework in Frameworks */,
+				C94228F11734AE420099F9CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C94228BB1734AE410099F9CC = {
+			isa = PBXGroup;
+			children = (
+				C9CB04DA17375A3C003B70E4 /* CoreLocation.framework */,
+				C94228CD1734AE410099F9CC /* BlueToothScan */,
+				C94228F41734AE420099F9CC /* BlueToothScanTests */,
+				C94228C61734AE410099F9CC /* Frameworks */,
+				C94228C51734AE410099F9CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C94228C51734AE410099F9CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C94228C41734AE410099F9CC /* BlueToothScan.app */,
+				C94228ED1734AE420099F9CC /* BlueToothScanTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C94228C61734AE410099F9CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9969F0D1734B6A600E87042 /* BluetoothManager.framework */,
+				C94229081734B00F0099F9CC /* CoreBluetooth.framework */,
+				C94228C71734AE410099F9CC /* UIKit.framework */,
+				C94228C91734AE410099F9CC /* Foundation.framework */,
+				C94228CB1734AE410099F9CC /* CoreGraphics.framework */,
+				C94228EE1734AE420099F9CC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C94228CD1734AE410099F9CC /* BlueToothScan */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB04D3173759DA003B70E4 /* frameworkFiles */,
+				C9CB04D2173759C7003B70E4 /* modules */,
+				C94228D61734AE410099F9CC /* BTSAppDelegate.h */,
+				C94228D71734AE410099F9CC /* BTSAppDelegate.m */,
+				C94228DF1734AE410099F9CC /* MainStoryboard_iPhone.storyboard */,
+				C94228E21734AE410099F9CC /* MainStoryboard_iPad.storyboard */,
+				C94228E51734AE420099F9CC /* BTSViewController.h */,
+				C94228E61734AE420099F9CC /* BTSViewController.m */,
+				C94228CE1734AE410099F9CC /* Supporting Files */,
+			);
+			path = BlueToothScan;
+			sourceTree = "<group>";
+		};
+		C94228CE1734AE410099F9CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C94228CF1734AE410099F9CC /* BlueToothScan-Info.plist */,
+				C94228D01734AE410099F9CC /* InfoPlist.strings */,
+				C94228D31734AE410099F9CC /* main.m */,
+				C94228D51734AE410099F9CC /* BlueToothScan-Prefix.pch */,
+				C94228D91734AE410099F9CC /* Default.png */,
+				C94228DB1734AE410099F9CC /* Default@2x.png */,
+				C94228DD1734AE410099F9CC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C94228F41734AE420099F9CC /* BlueToothScanTests */ = {
+			isa = PBXGroup;
+			children = (
+				C94228FA1734AE420099F9CC /* BlueToothScanTests.h */,
+				C94228FB1734AE420099F9CC /* BlueToothScanTests.m */,
+				C94228F51734AE420099F9CC /* Supporting Files */,
+			);
+			path = BlueToothScanTests;
+			sourceTree = "<group>";
+		};
+		C94228F51734AE420099F9CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C94228F61734AE420099F9CC /* BlueToothScanTests-Info.plist */,
+				C94228F71734AE420099F9CC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9CB04D2173759C7003B70E4 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				C94229051734AF390099F9CC /* BTSscan.h */,
+				C94229061734AF390099F9CC /* BTSscan.m */,
+				C9CB04D417375A06003B70E4 /* BTSCurrentLocation.h */,
+				C9CB04D517375A06003B70E4 /* BTSCurrentLocation.m */,
+				C9CB04D717375A1E003B70E4 /* BTSRestTransport.h */,
+				C9CB04D817375A1E003B70E4 /* BTSRestTransport.m */,
+			);
+			name = modules;
+			sourceTree = "<group>";
+		};
+		C9CB04D3173759DA003B70E4 /* frameworkFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C90318931734C92D008DE36C /* BluetoothManager.h */,
+				C96EDEBF17359E2200426999 /* BluetoothDevice.h */,
+			);
+			name = frameworkFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C94228C31734AE410099F9CC /* BlueToothScan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C94228FF1734AE420099F9CC /* Build configuration list for PBXNativeTarget "BlueToothScan" */;
+			buildPhases = (
+				C94228C01734AE410099F9CC /* Sources */,
+				C94228C11734AE410099F9CC /* Frameworks */,
+				C94228C21734AE410099F9CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueToothScan;
+			productName = BlueToothScan;
+			productReference = C94228C41734AE410099F9CC /* BlueToothScan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C94228EC1734AE420099F9CC /* BlueToothScanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C94229021734AE420099F9CC /* Build configuration list for PBXNativeTarget "BlueToothScanTests" */;
+			buildPhases = (
+				C94228E81734AE420099F9CC /* Sources */,
+				C94228E91734AE420099F9CC /* Frameworks */,
+				C94228EA1734AE420099F9CC /* Resources */,
+				C94228EB1734AE420099F9CC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C94228F31734AE420099F9CC /* PBXTargetDependency */,
+			);
+			name = BlueToothScanTests;
+			productName = BlueToothScanTests;
+			productReference = C94228ED1734AE420099F9CC /* BlueToothScanTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C94228BC1734AE410099F9CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BTS;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Hackgnar;
+			};
+			buildConfigurationList = C94228BF1734AE410099F9CC /* Build configuration list for PBXProject "BlueToothScan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C94228BB1734AE410099F9CC;
+			productRefGroup = C94228C51734AE410099F9CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C94228C31734AE410099F9CC /* BlueToothScan */,
+				C94228EC1734AE420099F9CC /* BlueToothScanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C94228C21734AE410099F9CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94228D21734AE410099F9CC /* InfoPlist.strings in Resources */,
+				C94228DA1734AE410099F9CC /* Default.png in Resources */,
+				C94228DC1734AE410099F9CC /* Default@2x.png in Resources */,
+				C94228DE1734AE410099F9CC /* Default-568h@2x.png in Resources */,
+				C94228E11734AE410099F9CC /* MainStoryboard_iPhone.storyboard in Resources */,
+				C94228E41734AE410099F9CC /* MainStoryboard_iPad.storyboard in Resources */,
+				C90318941734C92D008DE36C /* BluetoothManager.h in Resources */,
+				C96EDEC017359E2200426999 /* BluetoothDevice.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C94228EA1734AE420099F9CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94228F91734AE420099F9CC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C94228EB1734AE420099F9CC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C94228C01734AE410099F9CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94228D41734AE410099F9CC /* main.m in Sources */,
+				C94228D81734AE410099F9CC /* BTSAppDelegate.m in Sources */,
+				C94228E71734AE420099F9CC /* BTSViewController.m in Sources */,
+				C94229071734AF3A0099F9CC /* BTSscan.m in Sources */,
+				C9CB04D617375A06003B70E4 /* BTSCurrentLocation.m in Sources */,
+				C9CB04D917375A1E003B70E4 /* BTSRestTransport.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C94228E81734AE420099F9CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94228FC1734AE420099F9CC /* BlueToothScanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C94228F31734AE420099F9CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C94228C31734AE410099F9CC /* BlueToothScan */;
+			targetProxy = C94228F21734AE420099F9CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C94228D01734AE410099F9CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C94228D11734AE410099F9CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C94228DF1734AE410099F9CC /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C94228E01734AE410099F9CC /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C94228E21734AE410099F9CC /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C94228E31734AE410099F9CC /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		C94228F71734AE420099F9CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C94228F81734AE420099F9CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C94228FD1734AE420099F9CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C94228FE1734AE420099F9CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C94229001734AE420099F9CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueToothScan/BlueToothScan-Prefix.pch";
+				INFOPLIST_FILE = "BlueToothScan/BlueToothScan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C94229011734AE420099F9CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueToothScan/BlueToothScan-Prefix.pch";
+				INFOPLIST_FILE = "BlueToothScan/BlueToothScan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C94229031734AE420099F9CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlueToothScan.app/BlueToothScan";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueToothScan/BlueToothScan-Prefix.pch";
+				INFOPLIST_FILE = "BlueToothScanTests/BlueToothScanTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C94229041734AE420099F9CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlueToothScan.app/BlueToothScan";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueToothScan/BlueToothScan-Prefix.pch";
+				INFOPLIST_FILE = "BlueToothScanTests/BlueToothScanTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C94228BF1734AE410099F9CC /* Build configuration list for PBXProject "BlueToothScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C94228FD1734AE420099F9CC /* Debug */,
+				C94228FE1734AE420099F9CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C94228FF1734AE420099F9CC /* Build configuration list for PBXNativeTarget "BlueToothScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C94229001734AE420099F9CC /* Debug */,
+				C94229011734AE420099F9CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C94229021734AE420099F9CC /* Build configuration list for PBXNativeTarget "BlueToothScanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C94229031734AE420099F9CC /* Debug */,
+				C94229041734AE420099F9CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C94228BC1734AE410099F9CC /* Project object */;
+}
