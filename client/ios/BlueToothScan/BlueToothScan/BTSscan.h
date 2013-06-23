@@ -17,6 +17,7 @@
 @property BluetoothManager *btManager;
 @property NSString *btData;
 @property NSMutableArray *deviceList, *allDevices;
+@property NSMutableDictionary *uniqDevices;
 @property BTSCurrentLocation *locationHandler;
 @property BTSRestTransport *restTransport;
 @property NSNumber *deviceCount;

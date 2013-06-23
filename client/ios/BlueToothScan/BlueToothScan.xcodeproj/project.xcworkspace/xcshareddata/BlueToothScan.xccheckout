@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AF4A47C6-5400-4D1C-8F1D-AB6B11F2EC06</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BlueToothScan</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CB3BA9DB-4CFA-463E-8AC7-60CDCF50BD47</key>
+		<string>githubhg:/hackgnar/bluetoothdatabase.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>client/ios/BlueToothScan/BlueToothScan.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CB3BA9DB-4CFA-463E-8AC7-60CDCF50BD47</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>githubhg:/hackgnar/bluetoothdatabase.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CB3BA9DB-4CFA-463E-8AC7-60CDCF50BD47</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CB3BA9DB-4CFA-463E-8AC7-60CDCF50BD47</string>
+			<key>IDESourceControlWCCName</key>
+			<string>bluetoothdatabase</string>
+		</dict>
+	</array>
+</dict>
+</plist>

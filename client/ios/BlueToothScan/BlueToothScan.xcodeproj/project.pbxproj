@@ -29,6 +29,8 @@
 		C94228FC1734AE420099F9CC /* BlueToothScanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C94228FB1734AE420099F9CC /* BlueToothScanTests.m */; };
 		C94229071734AF3A0099F9CC /* BTSscan.m in Sources */ = {isa = PBXBuildFile; fileRef = C94229061734AF390099F9CC /* BTSscan.m */; };
 		C96EDEC017359E2200426999 /* BluetoothDevice.h in Resources */ = {isa = PBXBuildFile; fileRef = C96EDEBF17359E2200426999 /* BluetoothDevice.h */; };
+		C9711A5D1753D2F4004C2318 /* BTSUniqueDevicesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9711A5C1753D2F4004C2318 /* BTSUniqueDevicesTableViewController.m */; };
+		C97F8C93175296FB00EA7380 /* BTSAllScanTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C97F8C92175296FB00EA7380 /* BTSAllScanTableViewController.m */; };
 		C9CB04D617375A06003B70E4 /* BTSCurrentLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB04D517375A06003B70E4 /* BTSCurrentLocation.m */; };
 		C9CB04D917375A1E003B70E4 /* BTSRestTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB04D817375A1E003B70E4 /* BTSRestTransport.m */; };
 		C9CB04DB17375A3C003B70E4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CB04DA17375A3C003B70E4 /* CoreLocation.framework */; };
@@ -73,6 +75,10 @@
 		C94229061734AF390099F9CC /* BTSscan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSscan.m; sourceTree = "<group>"; };
 		C94229081734B00F0099F9CC /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		C96EDEBF17359E2200426999 /* BluetoothDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BluetoothDevice.h; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/PrivateFrameworks/BluetoothManager.framework/Headers/BluetoothDevice.h; sourceTree = "<absolute>"; };
+		C9711A5B1753D2F4004C2318 /* BTSUniqueDevicesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSUniqueDevicesTableViewController.h; sourceTree = "<group>"; };
+		C9711A5C1753D2F4004C2318 /* BTSUniqueDevicesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSUniqueDevicesTableViewController.m; sourceTree = "<group>"; };
+		C97F8C91175296FB00EA7380 /* BTSAllScanTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSAllScanTableViewController.h; sourceTree = "<group>"; };
+		C97F8C92175296FB00EA7380 /* BTSAllScanTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSAllScanTableViewController.m; sourceTree = "<group>"; };
 		C9969F0D1734B6A600E87042 /* BluetoothManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BluetoothManager.framework; path = System/Library/PrivateFrameworks/BluetoothManager.framework; sourceTree = SDKROOT; };
 		C9CB04D417375A06003B70E4 /* BTSCurrentLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSCurrentLocation.h; sourceTree = "<group>"; };
 		C9CB04D517375A06003B70E4 /* BTSCurrentLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSCurrentLocation.m; sourceTree = "<group>"; };
@@ -152,6 +158,10 @@
 				C94228E21734AE410099F9CC /* MainStoryboard_iPad.storyboard */,
 				C94228E51734AE420099F9CC /* BTSViewController.h */,
 				C94228E61734AE420099F9CC /* BTSViewController.m */,
+				C97F8C91175296FB00EA7380 /* BTSAllScanTableViewController.h */,
+				C97F8C92175296FB00EA7380 /* BTSAllScanTableViewController.m */,
+				C9711A5B1753D2F4004C2318 /* BTSUniqueDevicesTableViewController.h */,
+				C9711A5C1753D2F4004C2318 /* BTSUniqueDevicesTableViewController.m */,
 				C94228CE1734AE410099F9CC /* Supporting Files */,
 			);
 			path = BlueToothScan;
@@ -332,6 +342,8 @@
 				C94229071734AF3A0099F9CC /* BTSscan.m in Sources */,
 				C9CB04D617375A06003B70E4 /* BTSCurrentLocation.m in Sources */,
 				C9CB04D917375A1E003B70E4 /* BTSRestTransport.m in Sources */,
+				C97F8C93175296FB00EA7380 /* BTSAllScanTableViewController.m in Sources */,
+				C9711A5D1753D2F4004C2318 /* BTSUniqueDevicesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

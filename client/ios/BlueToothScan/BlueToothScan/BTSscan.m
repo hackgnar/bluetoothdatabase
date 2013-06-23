@@ -10,7 +10,7 @@
 //#import "BTSCurrentLocation.h"
 
 @implementation BTSscan
-@synthesize btManager, btData, deviceList, locationHandler,deviceCount, allDevices;
+@synthesize btManager, btData, deviceList, locationHandler,deviceCount, allDevices, uniqDevices;
 
 + (BTSscan *)sharedInstance
 {
@@ -34,6 +34,8 @@
     [self setRestTransport:[[BTSRestTransport alloc]init]];
     [self setDeviceCount:0];
     [self setAllDevices:[[NSMutableArray alloc]init]];
+    [self setUniqDevices:[[NSMutableDictionary alloc]init]];
+    
     return self;
 }
 
@@ -69,34 +71,44 @@
         [deviceList removeObjectsInRange:r];
     }
     [self setBtData:[deviceList componentsJoinedByString:@"\n"]];
-
+    
+    
     //create a json object from the latest bt object
     CLLocationCoordinate2D bar = [[locationHandler currentLocation] coordinate];
     NSDictionary *dic = [[NSDictionary alloc] initWithObjectsAndKeys:
+                         @"iOS", @"clientType",
+                         @"2.0", @"clientVersion",
                          bt.name, @"bluetoothName", 
                          bt.address, @"bluetoothAddress",
                          [[NSString alloc]initWithFormat:@"%f", bar.latitude],@"latatude", 
                          [[NSString alloc]initWithFormat:@"%f", bar.longitude],@"longitude", 
-                         [[NSString alloc]initWithFormat:@"%f", [[[locationHandler currentLocation] timestamp] timeIntervalSince1970]],@"timestamp", 
+                         [[NSString alloc]initWithFormat:@"%f", [[[locationHandler currentLocation] timestamp] timeIntervalSince1970]],@"timestamp",
+                         [[NSNumber alloc]initWithInt:bt.type], @"type",
+                         [[NSNumber alloc]initWithUnsignedInt:bt.majorClass], @"deviceMajor",
+                         [[NSNumber alloc]initWithUnsignedInt:bt.minorClass], @"deviceMinor",
                          nil];
     
     [[self allDevices] addObject:dic];
+    [[self uniqDevices] setValue:dic forKey:[dic valueForKey:@"bluetoothAddress"]];
     
-    NSLog(@"%@", [self allDevices]);
+    //NSLog(@"%@", [self allDevices]);
     
+    //NSLog(@"%@", dic);
     [self sendToServer:dic];
 }
 
 -(void)scan{
-    NSLog(@"scanning");
-    [[self btManager] setDeviceScanningEnabled:YES];
-    //[[self btManager] scanForConnectableDevices:1];
-    [[self btManager] scanForServices:0xFFFFFFFF];
-    NSLog(@"%d", [[self btManager] deviceScanningEnabled]);
+    NSLog(@"scanning now... Scanning enabled: %d", [[self btManager] deviceScanningEnabled]);
+    if ([[self btManager] deviceScanningEnabled] != 1){
+        [[self btManager] setDeviceScanningEnabled:YES];
+        //[[self btManager] scanForConnectableDevices:1];
+        [[self btManager] scanForServices:0xFFFFFFFF];
+    }
+    //NSLog(@"%d", [[self btManager] deviceScanningEnabled]);
     
-    [NSNotificationCenter defaultCenter];
-    NSNotification* notification = [NSNotification notificationWithName:@"MyNotification" object:self];
-    [[NSNotificationCenter defaultCenter] postNotification:notification];
+    //[NSNotificationCenter defaultCenter];
+    //NSNotification* notification = [NSNotification notificationWithName:@"MyNotification" object:self];
+    //[[NSNotificationCenter defaultCenter] postNotification:notification];
 }
 
 -(void)sendToServer:(NSDictionary *)deviceAsDict{
