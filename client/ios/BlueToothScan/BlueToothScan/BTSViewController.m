@@ -58,6 +58,7 @@ void myCallBack(CFNotificationCenterRef center, void *observer, CFStringRef name
 }
 -(void)updateSessionCount{
     self.sessionCount.text = [[btScanner deviceCount] stringValue];
+    self.uniqCount.text = [[[NSNumber alloc]initWithUnsignedInt:[[btScanner uniqDevices] count]] stringValue];
 }
 
 @end

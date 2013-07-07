@@ -11,6 +11,7 @@
 
 @interface BTSViewController : UIViewController
 @property BTSscan *btScanner;
+@property (weak, nonatomic) IBOutlet UILabel *uniqCount;
 @property (weak, nonatomic) NSString *btData;
 @property (weak, nonatomic) IBOutlet UILabel *dataLabel;
 @property (weak, nonatomic) IBOutlet UILabel *sessionCount;

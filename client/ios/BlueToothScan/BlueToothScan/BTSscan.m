@@ -61,7 +61,7 @@
     BluetoothDevice *bt = [x object];
     
     //create list of strings name/address and stick 35 in a list and create s string from them
-    int maxSize=35;
+    int maxSize=15;
     NSString *foo = [[NSString alloc]initWithFormat:@"%@:%@", bt.name, bt.address];
     [[self deviceList] addObject:foo];
     if ([deviceList count] > maxSize) {
@@ -72,13 +72,14 @@
     }
     [self setBtData:[deviceList componentsJoinedByString:@"\n"]];
     
+    //NSLog(@"%@", [[UIDevice currentDevice] name]);
     
     //create a json object from the latest bt object
     CLLocationCoordinate2D bar = [[locationHandler currentLocation] coordinate];
     NSDictionary *dic = [[NSDictionary alloc] initWithObjectsAndKeys:
                          @"iOS", @"clientType",
                          @"2.0", @"clientVersion",
-                         bt.name, @"bluetoothName", 
+                         bt.name, @"bluetoothName",
                          bt.address, @"bluetoothAddress",
                          [[NSString alloc]initWithFormat:@"%f", bar.latitude],@"latatude", 
                          [[NSString alloc]initWithFormat:@"%f", bar.longitude],@"longitude", 

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C90318911734B984008DE36C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94229081734B00F0099F9CC /* CoreBluetooth.framework */; };
 		C90318921734B98E008DE36C /* BluetoothManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9969F0D1734B6A600E87042 /* BluetoothManager.framework */; };
-		C90318941734C92D008DE36C /* BluetoothManager.h in Resources */ = {isa = PBXBuildFile; fileRef = C90318931734C92D008DE36C /* BluetoothManager.h */; };
 		C94228C81734AE410099F9CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94228C71734AE410099F9CC /* UIKit.framework */; };
 		C94228CA1734AE410099F9CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94228C91734AE410099F9CC /* Foundation.framework */; };
 		C94228CC1734AE410099F9CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94228CB1734AE410099F9CC /* CoreGraphics.framework */; };
@@ -28,7 +27,6 @@
 		C94228F91734AE420099F9CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C94228F71734AE420099F9CC /* InfoPlist.strings */; };
 		C94228FC1734AE420099F9CC /* BlueToothScanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C94228FB1734AE420099F9CC /* BlueToothScanTests.m */; };
 		C94229071734AF3A0099F9CC /* BTSscan.m in Sources */ = {isa = PBXBuildFile; fileRef = C94229061734AF390099F9CC /* BTSscan.m */; };
-		C96EDEC017359E2200426999 /* BluetoothDevice.h in Resources */ = {isa = PBXBuildFile; fileRef = C96EDEBF17359E2200426999 /* BluetoothDevice.h */; };
 		C9711A5D1753D2F4004C2318 /* BTSUniqueDevicesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9711A5C1753D2F4004C2318 /* BTSUniqueDevicesTableViewController.m */; };
 		C97F8C93175296FB00EA7380 /* BTSAllScanTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C97F8C92175296FB00EA7380 /* BTSAllScanTableViewController.m */; };
 		C9CB04D617375A06003B70E4 /* BTSCurrentLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB04D517375A06003B70E4 /* BTSCurrentLocation.m */; };
@@ -47,7 +45,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C90318931734C92D008DE36C /* BluetoothManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BluetoothManager.h; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/PrivateFrameworks/BluetoothManager.framework/Headers/BluetoothManager.h; sourceTree = "<absolute>"; };
 		C94228C41734AE410099F9CC /* BlueToothScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueToothScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94228C71734AE410099F9CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C94228C91734AE410099F9CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,7 +71,8 @@
 		C94229051734AF390099F9CC /* BTSscan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSscan.h; sourceTree = "<group>"; };
 		C94229061734AF390099F9CC /* BTSscan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSscan.m; sourceTree = "<group>"; };
 		C94229081734B00F0099F9CC /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		C96EDEBF17359E2200426999 /* BluetoothDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BluetoothDevice.h; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/PrivateFrameworks/BluetoothManager.framework/Headers/BluetoothDevice.h; sourceTree = "<absolute>"; };
+		C96927A217861775009CA3BC /* BluetoothDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothDevice.h; sourceTree = "<group>"; };
+		C96927A317861775009CA3BC /* BluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothManager.h; sourceTree = "<group>"; };
 		C9711A5B1753D2F4004C2318 /* BTSUniqueDevicesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSUniqueDevicesTableViewController.h; sourceTree = "<group>"; };
 		C9711A5C1753D2F4004C2318 /* BTSUniqueDevicesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSUniqueDevicesTableViewController.m; sourceTree = "<group>"; };
 		C97F8C91175296FB00EA7380 /* BTSAllScanTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSAllScanTableViewController.h; sourceTree = "<group>"; };
@@ -216,8 +214,8 @@
 		C9CB04D3173759DA003B70E4 /* frameworkFiles */ = {
 			isa = PBXGroup;
 			children = (
-				C90318931734C92D008DE36C /* BluetoothManager.h */,
-				C96EDEBF17359E2200426999 /* BluetoothDevice.h */,
+				C96927A217861775009CA3BC /* BluetoothDevice.h */,
+				C96927A317861775009CA3BC /* BluetoothManager.h */,
 			);
 			name = frameworkFiles;
 			sourceTree = "<group>";
@@ -300,8 +298,6 @@
 				C94228DE1734AE410099F9CC /* Default-568h@2x.png in Resources */,
 				C94228E11734AE410099F9CC /* MainStoryboard_iPhone.storyboard in Resources */,
 				C94228E41734AE410099F9CC /* MainStoryboard_iPad.storyboard in Resources */,
-				C90318941734C92D008DE36C /* BluetoothManager.h in Resources */,
-				C96EDEC017359E2200426999 /* BluetoothDevice.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
