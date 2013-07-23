@@ -1,0 +1,11 @@
+blucat
+The netcat for bluetooth!
+by Joseph Paul Cohen 2012
+
+
+##Ubuntu##
+
+For Ubuntu install the packages:
+
+sudo apt-get install bluez-tools libbluetooth-dev
+
