@@ -14,7 +14,7 @@
 -(id)init{
     self = [super self];
     if (self){
-        [self setBaseurl:@"http://servername:8163/bluetoothdata"];
+        [self setBaseurl:@"http://bluetoothdatabase.com/datacollection/"];
         NSURL *dataUrl = [[NSURL alloc]initWithString:[self baseurl]];
         [self setRequest:[[NSMutableURLRequest alloc]initWithURL:dataUrl]];
         [[self request] setHTTPMethod:@"POST"];

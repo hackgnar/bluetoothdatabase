@@ -120,7 +120,7 @@ public class RemoteDeviceDiscovery {
     }
     
     public static void postDevice(RemoteDevice d) throws Exception {
-        String url = "http://localhost:8000";
+        String url = "http://bluetoothdatabase.com/datacollection/";
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
  
